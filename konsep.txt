@@ -1,0 +1,11 @@
+[<] Hari, tanggal bulan tahun [>]
+--------------------------------------
+Pendapatan	: 0
+Pengeluaran	: 0
+Balance		: Pendapatan - Pengeluaran
+--------------------------------------
+
+List Transaksi:
+- Nama transaksi	(pendapatan/pengeluaran)
+
+
