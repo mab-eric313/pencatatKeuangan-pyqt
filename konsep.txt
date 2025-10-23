@@ -1,11 +1,7 @@
-[<] Hari, tanggal bulan tahun [>]
---------------------------------------
-Pendapatan	: 0
-Pengeluaran	: 0
-Balance		: Pendapatan - Pengeluaran
---------------------------------------
-
-List Transaksi:
-- Nama transaksi	(pendapatan/pengeluaran)
-
-
+1. Ide awal proyek : 
+	- Pencatat Keuangan Pribadi
+2. End-user (pengguna) : - Pengguna yang membutuhkan catatan finansial pribadi
+3. SDLC yang digunakan dan alasannya : - SDLC: Waterfall- Alasan: Kebutuhan sangat jelas,
+4. Rencana timeline pengerjaan sistem (20 Oktober 2025 - Januari)
+5. Kebutuhan awal sistem (fitur) yang akan dikembangkan, arsitektur sistem (web based, mobile based, desktop based)
+6. Lingkungan pengembangan sistem dan rencana pengembangan sistem (OS, bahasa pemrograman, framework dan tools yang digunakan).

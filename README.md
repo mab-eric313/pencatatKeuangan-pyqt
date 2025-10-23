@@ -1,10 +1,10 @@
 ## Create python venv
 
-python3 -m venv venv-pencatatKeuangan-pyqt
+`python3 -m venv venv-pencatatKeuangan-pyqt`
 
 ## Install the requirements
 
-python3 -m pip install -r requirements.txt
+`python3 -m pip install -r requirements.txt`
 
 
-<p>References: https://docs.python-guide.org/writing/structure/</p>
+References: https://docs.python-guide.org/writing/structure/
