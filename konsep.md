@@ -26,5 +26,6 @@
         - Bahasa Pemrograman: Python
         - Framework:
             1. Qt (PySide6) untuk GUI
-            2. SQLite untuk database
+            2. PyQtGraph (opsional) untuk membuat grafik
+            3. Pandas + OpenPyxl untuk ekspor ke excel
             3. PyInstaller untuk mengubah file Python ke file executable
