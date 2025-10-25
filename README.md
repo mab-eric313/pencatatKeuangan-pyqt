@@ -1,3 +1,6 @@
+> Project ini terinspirasi oleh aplikasi *Catatan Keuangan* karya Sepran Ashari <br>
+> https://play.google.com/store/apps/details?id=com.jmc.catatankeuangan
+
 # Langkah Setup Project
 
 1. Cek apakah python sudah terinstall 
@@ -5,6 +8,13 @@
         ```cmd
         python --version
         ```
+        - Jika terdapat error: <br>
+            `'python' is not recognized as an internal or external command, 
+            operable program or batch file.
+            ` <br>
+            itu artinya python belum terinstall, tapi jika merasa sudah diinstall
+            ikuti tutorial ini: <br> https://realpython.com/add-python-to-path/#how-to-add-python-to-path-on-windows <br>
+            scroll ke bawah hingga menemukan video-nya.
     - Di Unix (Linux/MacOS)
         ```bash
         python3 --version
