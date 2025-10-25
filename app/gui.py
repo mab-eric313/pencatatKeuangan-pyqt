@@ -1,14 +1,34 @@
-from PySide6.QtWidgets import QApplication, QWidget
+"""Modul yang menyediakan kelas dan fungsi GUI PySide6"""
+
+from PySide6 import QtCore, QtWidgets
+
+# fix docstring class GUI
 
 
-app = QApplication([])
+class GUI:
+    """Kelas GUI"""
 
-# Create a Qt widget, which will be our window.
-window = QWidget()
-window.show()  # IMPORTANT!!!!! Windows are hidden by default.
+    def __init__(self, riwayat, kategoriPendapatan, kategoriPengeluaran):
+        self.riwayat = riwayat
+        self.kategoriPendapatan = kategoriPendapatan
+        self.kategoriPengeluaran = kategoriPengeluaran
 
-# Start the event loop.
-app.exec()
+    class Window(QtWidgets.QWidget):
+        def __init__(self):
+            super().__init__()
 
-# Your application won't reach here until you exit and the event
-# loop has stopped.
+            self.text = QtWidgets.QLabel("hello world", alignment=QtCore.Qt.AlignCenter)
+            self.resize(300, 200)
+
+            layout = QtWidgets.QVBoxLayout()
+
+            layout.addWidget(self.text)
+            self.setLayout(layout)
+
+    def run_gui(self):
+        app = QtWidgets.QApplication([])
+
+        window = self.Window()
+        window.show()
+
+        app.exec()
