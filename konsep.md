@@ -25,28 +25,28 @@
 
     - **(Minggu ke-1 dan 2, 20-Okt - 01-Nov)** Setup kebutuhan project, seperti install python, python env, library yang digunakan, dll.
 
-    - **(Pertengahan November)** Versi `0.1-development`
+    - **(Pertengahan November)** Versi `0.1.0-devel`
         - CLI: 
             1. Membangun dan memastikan fondasi logika transaksi (pendapatan, pengeluaran, transfer) berjalan dengan baik 
             2. Menampilkan pendapatan, pengeluaran, balance
         - GUI: Membangun antarmuka layout transaksi sederhana
 
-    - **(Akhir November 2025)** Versi `0.2-development`
+    - **(Akhir November 2025)** Versi `0.2.0-devel`
         - CLI: Logika dasar transaksi, dompet, laporan, hutang-piutang sudah jadi
         - GUI: Antarmuka awal transaksi, dompet, laporan, hutang-piutang sudah jadi
 
-    - **(Pertengahan Desember)** Versi `0.3-development`
+    - **(Pertengahan Desember)** Versi `0.3.0-devel`
         - CLI: 
             1. Laporan bulanan dan detail-nya
             2. Fitur ekspor ke excel bekerja dengan baik
         - GUI: Penerapan logika transaksi, dompet, hutang-piutang bekerja dengan baik
-    - **(Akhir Desember)** Versi `0.4-development`
+    - **(Akhir Desember)** Versi `0.4.0-devel`
         - GUI: Meng-implementasikan fitur laporan bulanan
 
-    - **(Pertengahan Januari 2026)** Versi `0.5-development`
+    - **(Pertengahan Januari 2026)** Versi `0.5.0-devel`
         - GUI: Meng-implementasikan fitur tanggal
 
-    - **(Akhir Januari 2026)** Versi `1.0-beta`
+    - **(Akhir Januari 2026)** Versi `1.0.0-beta`
         - GUI: Meng-implementasikan fitur ekspor ke excel dan mendeploy project
 
 
