@@ -51,11 +51,15 @@
 
 
 5. Kebutuhan awal sistem (fitur) yang akan dikembangkan, arsitektur sistem (web based, mobile based, desktop based)
-    - Fitur: 
+    - Fitur yang akan dikembangkan: 
         1. Mencatat pendapatan, pengeluaran, dan transfer
         2. Mencatat hutang-piutang
         3. Mencatat laporan bulanan
         4. Dapat diekspor ke excel
+
+    - Arstektur sistem: 
+        - Desktop (untuk Windows, Linux, dan macOS) (diutamakan)
+        - Mobile (jika memungkinkan)
 
     - Kekurangan dari Aplikasi Catatan Keuangan karya Sepran Ashari:
         1. Ada Iklan
@@ -67,7 +71,6 @@
         - Version Control: Git/Github 
         - Manajamen dependensi: Python Virtual Environment
     - Rencana Pengembangan:
-        - Platform: Desktop (Windows, Linux, dan macOS)
         - Bahasa Pemrograman: Python
         - Framework/Library:
             1. Qt (PySide6) untuk GUI
