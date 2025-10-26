@@ -14,17 +14,17 @@ else:
 # TODO: fix docstring CLI
 
 
-class CLI:
+class CliApp:
     """Class CLI"""
 
-    def __init__(self, riwayat, kategoriPendapatan, kategoriPengeluaran):
+    def __init__(self, riwayat, kategori_pendapatan, kategori_pengeluaran):
         """Inisialisasi Class CLI"""
-        super(CLI, self).__init__()
+        super(CliApp, self).__init__()
         self.riwayat = riwayat
-        self.kategoriPendapatan = kategoriPendapatan
-        self.kategoriPengeluaran = kategoriPengeluaran
+        self.kategori_pendapatan = kategori_pendapatan
+        self.kategori_pengeluaran = kategori_pengeluaran
 
-    def run_cli(self):
+    def run(self):
         while True:
             dompet_mgr.tampilkan_saldo()
             print("[1] Pendapatan\n[2] Pengeluaran\n[3] Transfer\n[4] Keluar\n")
@@ -34,7 +34,7 @@ class CLI:
                 dompet = input("Dompet: ")
                 jumlah = int(input("Jumlah: "))
                 judul = input("Judul: ")
-                kategori = input(f"Kategori {self.kategoriPendapatan}: ")
+                kategori = input(f"Kategori {self.kategori_pendapatan}: ")
                 deskripsi = input("Deskripsi (opsional): ")
                 dompet_mgr.tambah(dompet, jumlah)
                 self.riwayat.append(t.Transaksi("Pendapatan", dompet, jumlah, judul,
@@ -44,11 +44,11 @@ class CLI:
                 dompet = input("Dompet: ")
                 jumlah = int(input("Jumlah: "))
                 judul = input("Judul: ")
-                kategori = input(f"Kategori {self.kategoriPengeluaran}: ")
+                kategori = input(f"Kategori {self.kategori_pengeluaran}: ")
                 deskripsi = input("Deskripsi (opsional): ")
                 if dompet_mgr.kurang(dompet, jumlah):
-                    self.riwayat.append(t.Transaksi("Pengeluaran", dompet, jumlah, judul,
-                                                    kategori, deskripsi))
+                    self.riwayat.append(t.Transaksi("Pengeluaran", dompet, jumlah,
+                                                    judul, kategori, deskripsi))
 
             elif pilih == "3":
                 dari = input("Transfer dari: ")
@@ -56,8 +56,8 @@ class CLI:
                 jumlah = int(input("Jumlah: "))
                 deskripsi = input("Deskripsi (opsional): ")
                 if dompet_mgr.transfer(dari, ke, jumlah):
-                    self.riwayat.append(t.Transaksi("Transfer", f"{dari}→{ke}", jumlah,
-                                                    "Transfer", "-", deskripsi))
+                    self.riwayat.append(t.Transaksi("Transfer", f"{dari}→{ke}", jumlah
+                                                    , "Transfer", "-", deskripsi))
 
             elif pilih == "4":
                 print("\n=== Riwayat Transaksi ===")

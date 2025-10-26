@@ -1,8 +1,8 @@
 # File ini hanya digunakan untuk pengembangan
 
 riwayat: list = []
-kategoriPendapatan = ["Gaji", "Laba", "Donasi"]
-kategoriPengeluaran = ["Makan-Minum", "Jajan", "Belanja", "Transportasi"]
+kategori_pendapatan = ["Gaji", "Laba", "Donasi"]
+kategori_pengeluaran = ["Makan-Minum", "Jajan", "Belanja", "Transportasi"]
 
 dompet: dict = {
     "BCA": 0,

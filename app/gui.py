@@ -5,7 +5,7 @@ from PySide6 import QtCore, QtWidgets
 # fix docstring class GUI
 
 
-class GUI:
+class GuiApp:
     """Kelas GUI"""
 
     def __init__(self, riwayat, kategoriPendapatan, kategoriPengeluaran):
@@ -25,7 +25,7 @@ class GUI:
             layout.addWidget(self.text)
             self.setLayout(layout)
 
-    def run_gui(self):
+    def run(self):
         app = QtWidgets.QApplication([])
 
         window = self.Window()

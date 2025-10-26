@@ -4,12 +4,12 @@ from pathlib import Path
 if Path("preset.py").exists():
     import preset
     riwayat = preset.riwayat
-    kategoriPendapatan = preset.kategoriPendapatan
-    kategoriPengeluaran = preset.kategoriPengeluaran
+    kategori_pendapatan = preset.kategori_pendapatan
+    kategori_pengeluaran = preset.kategori_pengeluaran
 else:
     riwayat = []
-    kategoriPendapatan = []
-    kategoriPengeluaran = []
+    kategori_pendapatan = []
+    kategori_pengeluaran = []
 
 
 if __name__ == "__main__":
@@ -22,8 +22,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.no_gui:
-        import app.cli as c
-        c.CLI(riwayat, kategoriPendapatan, kategoriPengeluaran).run_cli()
+        from app.cli import CliApp
+        CliApp(riwayat, kategori_pendapatan, kategori_pengeluaran).run()
     else:
-        import app.gui as g
-        g.GUI(riwayat, kategoriPendapatan, kategoriPengeluaran).run_gui()
+        from app.gui import GuiApp
+        GuiApp(riwayat, kategori_pendapatan, kategori_pengeluaran).run()
